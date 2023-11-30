@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/karta.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Маршруты электробусов</title>
+</head>
+<body>
+<!--Навигиционная панель + гланый блок-->
+<section class="nav">
+    <div class="navigation">
+        <div class="cont"><h1>SITRONIX BUS</h1></div>
+        <a href="#openModal" class="i"><i class='bx bx-user'></i>Войти</a>
+        <div id="openModal" class="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Войдите в профиль</h3>
+                        <a href="#close" title="Close" class="close">×</a>
+                    </div>
+                    <div class="modal-body">
+                        <form class="reg">
+                            <input type="text" placeholder="Введите имя">
+                            <input type="tel" placeholder="Введите номер телефона">
+                            <input type="email" placeholder="Введите почту">
+                            <input type="text" placeholder="Введите название организации">
+                            <button><a href="#">Войти </a></button>
+                            <button><a href="#openModale">Нет профиля? Зарегистрируйся!</a></button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="openModale" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Введите данные, чтобы зарегистрироваться</h3>
+                    <a href="#close" title="Close" class="close">×</a>
+                </div>
+                <div class="modal-body">
+                    <form class="reg">
+                        <input type="text" placeholder="Введите имя">
+                        <input type="tel" placeholder="Введите номер телефона">
+                        <input type="email" placeholder="Введите почту">
+                        <input type="text" placeholder="Введите название организации">
+                        <button><a href="#">Зарегистрироваться</a></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+<div class="nazv">
+<a href="index.html"> <i class='bx bx-arrow-back'></i></a>
+    <h2>Схема электробусов города Дзержинска</h2>
+</div>
+<section class="kart">
+    <img src="../img/175343.png">
+</section>
+<section class="footer">
+    <p>DPK</p>
+</section>
+</body>
+</html>

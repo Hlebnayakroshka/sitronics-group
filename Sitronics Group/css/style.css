@@ -1,0 +1,453 @@
+@font-face {
+    font-family: 'Geologica Thin';
+    src: local('Geologica Thin'),
+    url(../fonts/ofont.ru_Geologica.ttf);
+}
+@font-face {
+    font-family: 'Geologica Bold';
+    src: local('Geologica Bold'),
+    url(../fonts/ofont.ru_GeologicaBold.ttf);
+}
+::-webkit-scrollbar {
+    width: 0;
+}
+*{
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    margin: 0;
+
+}
+/*nav*/
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+.navigation .i{
+    display: flex;
+    font-family: "Geologica Bold";
+    font-size: 20px;
+    justify-content: space-between;
+    mix-blend-mode: lighten;
+    margin-top: 1%;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    padding: 1%;
+}
+
+.navigation a:hover{
+    color: #dcdcdc;
+    background: rgba(246, 246, 246, 0.06);
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+}
+.navigation i{
+    font-size: 20px;
+    margin-top: 1%;
+    mix-blend-mode: lighten;
+}
+.cont{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+h1{
+    font-size: 110px;
+    color: white;
+    margin-top: 15%;
+    font-family: "Geologica Bold";
+    mix-blend-mode: lighten;
+}
+
+
+
+/*Стили для всплывающих окон*/
+/*---------------------------------------------*/
+
+.reg input{
+    width: 100%;
+    margin-bottom: 2%;
+
+}
+.reg button{
+    background: rgb(103,111,88);
+    border: 0;
+    padding: 1%;
+}
+
+
+.reg button a{
+    color: white;
+
+}
+.reg button a:hover{
+    color: rgb(132,132,132);
+}
+.modal {
+    position: fixed; /* фиксированное положение */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5); /* фон */
+    z-index: 1050;
+    opacity: 0; /* по умолчанию модальное окно прозрачно */
+    -webkit-transition: opacity 200ms ease-in;
+    -moz-transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in; /* анимация перехода */
+    pointer-events: none; /* элемент невидим для событий мыши */
+    margin: 0;
+    padding: 0;
+}
+/* При отображении модального окно */
+.modal:target {
+    opacity: 1; /* делаем окно видимым */
+    pointer-events: auto; /* элемент видим для событий мыши */
+    overflow-y: auto; /* добавляем прокрутку по y, когда элемент не помещается на страницу */
+}
+/* ширина модального окна и его отступы от экрана */
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px;
+}
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 500px;
+        margin: 30px auto; /* отображение окна по центру */
+    }
+}
+/* Стили для блока с контентом окна */
+.modal-content {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+}
+@media (min-width: 768px) {
+    .modal-content {
+        -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+        box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    }
+}
+/* Стили заголовка окна */
+.modal-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #eceeef;
+}
+.modal-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+/* Стили кнопки "х" ("Закрыть")  */
+.close {
+    float: right;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    text-decoration: none;
+}
+/* Стили для закрывающей кнопки в фокусе или наведении */
+.close:focus, .close:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .75;
+}
+/* Стили блока основного содержимого окна */
+.modal-body {
+    position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 15px;
+    overflow: auto;
+}
+
+
+/*Всплывающее окно авторизации*/
+.reg input{
+    width: 100%;
+    margin-bottom: 2%;
+
+}
+.reg button{
+    background: rgb(103,111,88);
+    border: 0;
+    padding: 2%;
+}
+
+
+.reg button a{
+    color: white;
+
+}
+.reg button a:hover{
+    color: rgb(132,132,132);
+}
+.modal {
+    position: fixed; /* фиксированное положение */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5); /* фон */
+    z-index: 1050;
+    opacity: 0; /* по умолчанию модальное окно прозрачно */
+    -webkit-transition: opacity 200ms ease-in;
+    -moz-transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in; /* анимация перехода */
+    pointer-events: none; /* элемент невидим для событий мыши */
+    margin: 0;
+    padding: 0;
+}
+/* При отображении модального окно */
+.modal:target {
+    opacity: 1; /* делаем окно видимым */
+    pointer-events: auto; /* элемент видим для событий мыши */
+    overflow-y: auto; /* добавляем прокрутку по y, когда элемент не помещается на страницу */
+}
+/* ширина модального окна и его отступы от экрана */
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px;
+}
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 500px;
+        margin: 30px auto; /* отображение окна по центру */
+    }
+}
+/* Стили для блока с контентом окна */
+.modal-content {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+}
+@media (min-width: 768px) {
+    .modal-content {
+        -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+        box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    }
+}
+/* Стили заголовка окна */
+.modal-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #eceeef;
+}
+.modal-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+/* Стили кнопки "х" ("Закрыть")  */
+.close {
+    float: right;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    text-decoration: none;
+}
+/* Стили для закрывающей кнопки в фокусе или наведении */
+.close:focus, .close:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .75;
+}
+/* Стили блока основного содержимого окна */
+.modal-body {
+    position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 15px;
+    overflow: auto;
+}
+
+/*---------------------------------------------*/
+
+/*txt*/
+.txt{
+    width: 100%;
+    margin: 8% auto ;
+    display: flex;
+}
+.k{
+    width: 95%;
+justify-content: space-between;
+    display: flex;
+    margin: 0 auto;
+}
+.sxema{
+    background-image: url("../img/schema.jpg");
+    background-position: top;
+    background-size: cover;
+    width: 65%;
+    padding: 15% 0;
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    border-radius: 5px;
+}
+.sxema a{
+    background: white;
+    color: black;
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 3%;
+    font-size:20px;
+    border-radius: 5px;
+    font-family: "Geologica Bold";
+    vertical-align: bottom;
+    width: 100%;
+}
+.sxema a:hover{
+    background: rgba(0, 0, 0, 0.44);
+    color: white;
+}
+.obs{
+    width: 30%;
+    text-align: center;
+
+}
+.sit {
+    background-image: url("../img/Снимок экрана 2023-11-29 211713.png");
+    background-position: top;
+    background-size: cover;
+    width: 100%;
+    padding: 25% 0;
+    margin-bottom: 10%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.3);
+}
+.sit a{
+    background: white;
+    color: black;
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 3%;
+    font-size:20px;
+    border-radius: 5px;
+    width: 100%;
+    font-family: "Geologica Bold";
+}
+.sit a:hover{
+    background: rgba(0, 0, 0, 0.44);
+    color: white;
+}
+.rasp {
+    background-image: url("../img/Снимок экрана 2023-11-29 211713.png");
+    background-position: top;
+    background-size: cover;
+    width: 100%;
+    padding: 25% 0;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.3);
+
+}
+.rasp a{
+    background: white;
+    color: black;
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 3%;
+    font-size:20px;
+    border-radius: 5px;
+    width: 100%;
+    font-family: "Geologica Bold";
+}
+.rasp a:hover{
+    background: rgba(0, 0, 0, 0.44);
+    color: white;
+}
+/*footer*/
+footer{
+    background: rgba(0, 0, 0, 0.23);
+    text-align: center;
+    padding: 5px;
+}
+footer p{
+    font-family: "Geologica Thin";
+    font-size: 18px;
+}
