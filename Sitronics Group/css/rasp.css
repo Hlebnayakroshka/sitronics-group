@@ -17,21 +17,13 @@
 }
 body{
     margin: 0;
-    
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 11%, rgba(222,222,222,1) 100%);
 }
 /*nav*/
-video{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
 
-.nav table{
-    mix-blend-mode: lighten;
+.logo{
+    width: 5%;
 }
 
 .navigation .i{
@@ -39,12 +31,13 @@ video{
     font-family: "Geologica Bold";
     font-size: 20px;
     justify-content: space-between;
-    mix-blend-mode: lighten;
+
     margin-top: 1%;
-    border: 1px solid white;
+    margin-bottom: 3%;
+    border: 1px solid #000000;
     border-radius: 5px;
-    color: white;
-    padding: 1%;
+    color: #000000;
+    padding: 5px;
 }
 
 .navigation a:hover{
@@ -60,7 +53,7 @@ video{
 .navigation i{
     font-size: 20px;
     margin-top: 1%;
-    mix-blend-mode: lighten;
+
 }
 .cont{
     width: 95%;
@@ -69,11 +62,11 @@ video{
     justify-content: space-between;
 }
 h1{
-    font-size: 110px;
-    color: white;
-    margin-top: 15%;
+    font-size: 25px;
+    color: #000000;
+
     font-family: "Geologica Bold";
-    mix-blend-mode: lighten;
+
 }
 
 
@@ -348,100 +341,40 @@ h1{
 }
 
 /*---------------------------------------------*/
-
-/*txt*/
-.txt{
-    width: 100%;
-    margin: 8% auto ;
+.nazv{
+    margin: 0 auto;
+    width: 95%;
     display: flex;
 }
-.k{
-    width: 95%;
-justify-content: space-between;
-    display: flex;
+h2{
+    font-family: "Geologica Bold";
+    font-size: 35px;
+}
+.nazv a{
+    font-size: 27px;
+    color: black;
+    padding-top: 40px;
+}
+.nazv a:hover{
+    color: #777777;
+}
+
+
+/*Расписание*/
+table{
+    width: 90%;
     margin: 0 auto;
 }
-.sxema{
-    background-image: url("../img/175343.png");
-    background-position: top;
-    background-size: cover;
-    width: 65%;
-    padding: 15% 0;
-    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    border-radius: 5px;
+td{
+    font-family: "Geologica Thin";
+    font-size: 20px;
+    padding: 2%;
 }
-.sxema a{
-    background: white;
+td a{
     color: black;
-    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    padding: 3%;
-    font-size:20px;
-    border-radius: 5px;
-    font-family: "Geologica Bold";
-    vertical-align: bottom;
-    width: 100%;
 }
-.sxema a:hover{
-    background: rgba(0, 0, 0, 0.44);
-    color: white;
-}
-.obs{
-    width: 30%;
-    text-align: center;
-
-}
-.sit {
-    background-image: url("../img/Снимок экрана 2023-11-29 211713.png");
-    background-position: top;
-    background-size: cover;
-    width: 100%;
-    padding: 25% 0;
-    margin-bottom: 10%;
-    border-radius: 5px;
-    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.3);
-}
-.sit a{
-    background: white;
-    color: black;
-    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    padding: 3%;
-    font-size:20px;
-    border-radius: 5px;
-    width: 100%;
-    font-family: "Geologica Bold";
-}
-.sit a:hover{
-    background: rgba(0, 0, 0, 0.44);
-    color: white;
-}
-.rasp {
-    background-image: url("../img/g.png");
-    background-position: top;
-    background-size: cover;
-    width: 100%;
-    padding: 25% 0;
-    text-align: center;
-    border-radius: 5px;
-    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.3);
-
-}
-.rasp a{
-    background: white;
-    color: black;
-    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    padding: 3%;
-    font-size:20px;
-    border-radius: 5px;
-    width: 100%;
-    font-family: "Geologica Bold";
-}
-.rasp a:hover{
-    background: rgba(0, 0, 0, 0.44);
-    color: white;
+td a:hover{
+    color: #777777;
 }
 /*footer*/
 footer{

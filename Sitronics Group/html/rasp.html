@@ -5,20 +5,15 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/rasp.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Sitronics Bus</title>
+    <title>Расписание и схема движения электробусов</title>
 </head>
 <body>
 <!--Навигиционная панель + гланый блок-->
 <section class="nav">
-
-    <video autoplay loop muted id="nav" class="vid">
-        <source src="../img/Новый%20проект.mp4" type="video/mp4"></source>
-    </video>
     <div class="navigation">
-        <i class='bx bx-plug' style='color:#ffffff'  ></i>
-
+        <div class="cont"><h1>SITRONIX BUS</h1></div>
         <a href="#openModal" class="i"><i class='bx bx-user'></i>Войти</a>
         <div id="openModal" class="modal">
             <div class="modal-dialog">
@@ -62,33 +57,52 @@
             </div>
         </div>
     </div>
-
-
-    </div>
-    <div class="cont">
-        <h1>SITRONIX <br>
-            BUS</h1>
     </div>
 </section>
-
-<!--Блок с другими разделами сайта-->
-<section class="txt">
-    <div class="k">
-    <div class="sxema">
-        <a href="karta.html">ОБЩАЯ СХЕМА МАРШРУТОВ ЭЛЕКТРОБУСОВ Г. ДЗЕРЖИНСКА</a>
-    </div>
-    <div class="obs">
-        <div class="sit">
-            <a href="probki.html">ПРОБКИ И ПЕРЕКРЫТИЯ</a>
-        </div>
-        <div class="rasp">
-            <a href="rasp.html">РАСПИСАНИЕ</a>
-        </div>
-    </div>
-    </div>
+<div class="nazv">
+    <a href="index.html"> <i class='bx bx-arrow-back'></i></a>
+    <h2>Расписание и схема движения электробусов</h2>
+</div>
+<section class="marshryt">
+    <table>
+        <tr>
+            <td>Маршрут</td>
+            <td>Остановки</td>
+            <td>Время</td>
+            <td>Интервал</td>
+        </tr>
+        <tr>
+            <td>T-25</td>
+            <td><a href="mars1.html">СЕВЕРНЫЕ ВОРОТА - ПР.ЦИОЛКОВСКОГО</a></td>
+            <td>С 06:06 ДО 20:16</td>
+            <td>5-10 мин</td>
+        </tr>
+        <tr>
+            <td>T-10</td>
+            <td><a href="mars2.html">ЗАВОД ИМ.Я.М.СВЕРДЛОВА - УЛ.КОММУНАЛЬНАЯ</a></td>
+            <td>С 05:20	ДО 21:21</td>
+            <td>5-10 мин</td>
+        </tr>
+        <tr>
+            <td>T-28</td>
+            <td><a href="mars3.html">ЗАВОД ИМ.Я.М.СВЕРДЛОВА - АО «КАНАТ»</a></td>
+            <td>С 06:20	ДО 22:30</td>
+            <td>5-10 мин</td>
+        </tr>
+        <tr>
+            <td>T-33</td>
+            <td><a href="mars4.html">ЗАВОД ИМ.Я.М.СВЕРДЛОВА - ВОКЗАЛ</a></td>
+            <td>С 5:49 ДО 22:32</td>
+            <td>5-10 мин</td>
+        </tr>
+        <tr>
+            <td>T-5</td>
+            <td><a href="mars5.html">ЗАВОД ИМ.Я.М.СВЕРДЛОВА - «ДЕЛОВОЙ ЦЕНТР»</a></td>
+            <td>С 5:30 ДО 21:00</td>
+            <td>5-10 мин</td>
+        </tr>
+    </table>
 </section>
-
-<!--Подвал-->
 <footer>
     <p>DPK</p>
 </footer>
