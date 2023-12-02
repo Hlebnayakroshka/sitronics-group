@@ -376,6 +376,30 @@ td a{
 td a:hover{
     color: #777777;
 }
+#rocket{
+    padding: 0;
+    text-align: center;
+}
+#rockets{
+    padding: 0;
+    text-align: center;
+    color: black;
+}
+#rocketss{
+    padding: 0;
+    text-align: center;
+}
+#rocketsss{
+    padding: 0;
+    text-align: center;
+    color: black;
+}
+#rocketssss{
+    padding: 0;
+    text-align: center;
+    color: black;
+}
+
 /*footer*/
 footer{
     background: rgba(0, 0, 0, 0.23);
