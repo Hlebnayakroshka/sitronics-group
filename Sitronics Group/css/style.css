@@ -21,33 +21,19 @@ body{
 }
 /*nav*/
 .nav{
-    height: 100%;
+    background: rgb(147,147,147);
+    background: radial-gradient(circle, rgba(147,147,147,1) 0%, rgba(230,230,230,1) 100%);
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.3);
 }
-video{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-
-    object-fit: cover;
-    object-position: center;
-}
-
-.nav table{
-    mix-blend-mode: lighten;
-}
-
-
 .navigation .i{
     display: flex;
     font-family: "Geologica Bold";
     font-size: 20px;
     justify-content: space-between;
-    mix-blend-mode: lighten;
     margin-top: 1%;
-    border: 1px solid white;
+    border: 1px solid black;
     border-radius: 5px;
-    color: white;
+    color:black;
     padding: 5px;
 }
 
@@ -72,7 +58,7 @@ video{
 .navigation i{
     font-size: 20px;
     margin-top: 1%;
-    mix-blend-mode: lighten;
+    color: black;
 }
 .cont{
     width: 95%;
@@ -80,21 +66,23 @@ video{
     margin: 5% auto 10% auto;
 }
 .cont p{
-    mix-blend-mode: lighten;
-    color: white;
+
+    color: black;
     font-family: "Geologica Thin";
     font-size: 20px;
     opacity: 0;
     animation: slideRight .5s ease forwards;
     animation-delay: .5s;
-    text-shadow: 1px 1px 1px black;
+    padding-bottom: 2%;
+
 }
 h1{
     font-size: 210px;
     color: white;
+    text-shadow: 1px 4px 10px black;
     margin: 0 auto;
     font-family: "Geologica Bold";
-    mix-blend-mode: lighten;
+
     opacity: 0;
     animation: slideRight .5s ease forwards;
     animation-delay: .5s;
@@ -379,7 +367,6 @@ h1{
     width: 100%;
     margin: 0 auto;
     display: flex;
-
     backdrop-filter: blur(1px);
 
 }
@@ -479,7 +466,6 @@ footer{
     background: rgba(0, 0, 0, 0.23);
     text-align: center;
     padding: 5px;
-    mix-blend-mode: lighten;
     backdrop-filter: blur(5px);
     margin-top: 5%;
 }
